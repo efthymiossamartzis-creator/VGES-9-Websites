@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="med-teal-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#286957"/>
+      <stop offset="100%" stop-color="#193D35"/>
+    </linearGradient>
+    <linearGradient id="soft-bg-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F6FAF8"/>
+      <stop offset="100%" stop-color="#E3EEE7"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="100%" height="100%" fill="#F6FAF8"/>
+  <rect x="40" y="40" width="1120" height="550" fill="#FFFFFF" stroke="#D1E2D8" stroke-width="2" rx="12"/>
+  <circle cx="950" cy="315" r="160" fill="#E3EEE7" opacity="0.5"/>
+  <!-- Cross emblem -->
+  <rect x="938" y="240" width="24" height="150" rx="8" fill="#286957"/>
+  <rect x="875" y="303" width="150" height="24" rx="8" fill="#286957"/>
+  <text x="120" y="230" font-family="Georgia, serif" font-size="54" fill="#193D35">ARETI MEDICAL</text>
+  <text x="120" y="280" font-family="Arial, sans-serif" font-size="18" fill="#286957" letter-spacing="6">HEALTHCARE PRACTICE CONCEPT</text>
+  <text x="120" y="380" font-family="Arial, sans-serif" font-size="32" fill="#193D35" font-weight="bold">Η φροντίδα ξεκινά με σαφή ενημέρωση.</text>
+  <text x="120" y="460" font-family="Arial, sans-serif" font-size="16" fill="#668278">Σχεδιαστικό Demo • VGES Online Websites</text>
+
+</svg>

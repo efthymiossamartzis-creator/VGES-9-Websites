@@ -1,0 +1,247 @@
+[
+  {
+    "path": "00-MASTER-RESEARCH.md",
+    "bytes": 22214,
+    "sha256": "711dc11e81e6f7d9af73908fddbe6b66d983a46a0b4accaf724bc09c4cf2012c"
+  },
+  {
+    "path": "01-Aurelio-Barbershop/ANTIGRAVITY-PROMPT.md",
+    "bytes": 25004,
+    "sha256": "2b790f6926cfd4aa9f7e61b5587a31807ac19f4e45ee51dfbe066035771e0e84"
+  },
+  {
+    "path": "01-Aurelio-Barbershop/ASSET-CHECKLIST.md",
+    "bytes": 3143,
+    "sha256": "a3815870b56827c95b30101410535a9917e78d5a4abd4b639d0e8210a4f5ec2f"
+  },
+  {
+    "path": "01-Aurelio-Barbershop/DEPLOYMENT-CHECKLIST.md",
+    "bytes": 3709,
+    "sha256": "c3716f858f771d2d1e051e908f0a670e0bfb40d1db63cdd77bd8e414788c9bfa"
+  },
+  {
+    "path": "01-Aurelio-Barbershop/PROJECT-BRIEF.md",
+    "bytes": 2199,
+    "sha256": "87c8566ef2186514f52a3e3b82ff6d4d3fb031ab2ff5b2236a89094b217c9724"
+  },
+  {
+    "path": "01-Aurelio-Barbershop/TEMPLATE-RESEARCH.md",
+    "bytes": 4970,
+    "sha256": "98967f6770a987ef562d3e114a1159d176c171c6b05b2fdbbb3245c8332b1942"
+  },
+  {
+    "path": "01-WORKFLOW-AND-ORDER.md",
+    "bytes": 4499,
+    "sha256": "1c7bb836fdbf36371bb01ec635042afe50c6334ba9f4b350e9bdc4a5702e4e13"
+  },
+  {
+    "path": "02-Mason-Elia/ANTIGRAVITY-PROMPT.md",
+    "bytes": 24969,
+    "sha256": "f44f8c194699f24a7538be893a9e616f2882af7f59397184d57e4d08c5637158"
+  },
+  {
+    "path": "02-Mason-Elia/ASSET-CHECKLIST.md",
+    "bytes": 3164,
+    "sha256": "919cd58e6b22847466901b82d40dee6873f11d381abaac05982b49cfd87203b0"
+  },
+  {
+    "path": "02-Mason-Elia/DEPLOYMENT-CHECKLIST.md",
+    "bytes": 3515,
+    "sha256": "2268a214f17059fe179bdd8f68b790f88b5d565346b853a0214b6f4e52801828"
+  },
+  {
+    "path": "02-Mason-Elia/PROJECT-BRIEF.md",
+    "bytes": 2202,
+    "sha256": "706fb073e3e0261e6c20bcd038352fbbdc47a98e59ac4323a2c106566ce79576"
+  },
+  {
+    "path": "02-Mason-Elia/TEMPLATE-RESEARCH.md",
+    "bytes": 4982,
+    "sha256": "ccfda49ac1927be9d7a3e689b4876387f839b278f98c4bd09bc3055ecc32021e"
+  },
+  {
+    "path": "03-Fos-Photography/ANTIGRAVITY-PROMPT.md",
+    "bytes": 24541,
+    "sha256": "546546d76d50aad270a5c7a551be482011cd99ded65d01c06d0ed09783267065"
+  },
+  {
+    "path": "03-Fos-Photography/ASSET-CHECKLIST.md",
+    "bytes": 3219,
+    "sha256": "eb470b7f89f895083c86d62cab22b27b7408dfc9c2ef155b5a545107eae96f96"
+  },
+  {
+    "path": "03-Fos-Photography/DEPLOYMENT-CHECKLIST.md",
+    "bytes": 3501,
+    "sha256": "478dd5fa81f99b88e2daa98c843a652ea2527d347ab2d0eda9629fb52814d85c"
+  },
+  {
+    "path": "03-Fos-Photography/PROJECT-BRIEF.md",
+    "bytes": 2058,
+    "sha256": "90f6fad4cf5f7f4e54eacad0ea49873defd4d36bef5e2d2e48e0009a7c183761"
+  },
+  {
+    "path": "03-Fos-Photography/TEMPLATE-RESEARCH.md",
+    "bytes": 4926,
+    "sha256": "ac3272c8d67e50359e529f5128cdc5f88e45f0b387df99f34aedf3f75e681434"
+  },
+  {
+    "path": "04-Nisa-Beauty/ANTIGRAVITY-PROMPT.md",
+    "bytes": 24491,
+    "sha256": "a6acd472e8e92f5d51a3868a7078b04e3bdd145dd02d4701fcbb1101b617dd36"
+  },
+  {
+    "path": "04-Nisa-Beauty/ASSET-CHECKLIST.md",
+    "bytes": 3216,
+    "sha256": "60b0694605cabb0422925aafb43e7366b442a99025be3acd27ec6c2dc3163c79"
+  },
+  {
+    "path": "04-Nisa-Beauty/DEPLOYMENT-CHECKLIST.md",
+    "bytes": 3410,
+    "sha256": "1a069dce71327907265d0d8a0d0e8336f6994eb64cb1582d3b3d5f6383f38d6c"
+  },
+  {
+    "path": "04-Nisa-Beauty/PROJECT-BRIEF.md",
+    "bytes": 2051,
+    "sha256": "ad6b141425081f62b38d13e56aa27517b57b7abeda155befbd718ce678f548a9"
+  },
+  {
+    "path": "04-Nisa-Beauty/TEMPLATE-RESEARCH.md",
+    "bytes": 4761,
+    "sha256": "ae78e4bd694252c7257bb42e2595c56ebef5a2fe5ad7806f1ae44710a7fa5c34"
+  },
+  {
+    "path": "05-Areti-Medical/ANTIGRAVITY-PROMPT.md",
+    "bytes": 25264,
+    "sha256": "ee5bc4c0f2f9101620b4e0c28c2f7218cf1ed2ab9d9b2ab24e47d492a951e332"
+  },
+  {
+    "path": "05-Areti-Medical/ASSET-CHECKLIST.md",
+    "bytes": 3266,
+    "sha256": "9b0ef89df8ae89b5e115e25d2a3ab9fa8dd8d256d145aed6cb3a5062e6414c68"
+  },
+  {
+    "path": "05-Areti-Medical/DEPLOYMENT-CHECKLIST.md",
+    "bytes": 3499,
+    "sha256": "c3e5413d495fc8d073d35a383d92f5eea7feee0bf2c5ae1a47cc4b7d63693ae7"
+  },
+  {
+    "path": "05-Areti-Medical/PROJECT-BRIEF.md",
+    "bytes": 2129,
+    "sha256": "128960aa8310b73d8d4f0014b29272422ad6a4c2e23f96200fadbced0df49afe"
+  },
+  {
+    "path": "05-Areti-Medical/TEMPLATE-RESEARCH.md",
+    "bytes": 5062,
+    "sha256": "1620043a84f435a96489e5448e549e4f066c28d5cda5bd95827da90c6bc80a03"
+  },
+  {
+    "path": "06-Lumen-Dental/ANTIGRAVITY-PROMPT.md",
+    "bytes": 24707,
+    "sha256": "7000f2f73449e9779247d15c3745891fbccde073f621a7f2d5ac2cf2e0b8e756"
+  },
+  {
+    "path": "06-Lumen-Dental/ASSET-CHECKLIST.md",
+    "bytes": 3186,
+    "sha256": "47580efbbf3081a34c7837b3daf98098fcfbdd477f35c81e45667d25f48b671a"
+  },
+  {
+    "path": "06-Lumen-Dental/DEPLOYMENT-CHECKLIST.md",
+    "bytes": 3425,
+    "sha256": "58229b3fe45ff218b19a1bf69ec704453d36666df21fbeeed55ebb1abfd7a279"
+  },
+  {
+    "path": "06-Lumen-Dental/PROJECT-BRIEF.md",
+    "bytes": 2188,
+    "sha256": "def080422f0e38d9a5dee50b203824e8349d95d83cf2c9401c05eaf595e817eb"
+  },
+  {
+    "path": "06-Lumen-Dental/TEMPLATE-RESEARCH.md",
+    "bytes": 4952,
+    "sha256": "363ae3ebce0c94ec7fc5739c18279bce2a1aff5120242241d388aa5295dd73d4"
+  },
+  {
+    "path": "07-Themis-Legal/ANTIGRAVITY-PROMPT.md",
+    "bytes": 24891,
+    "sha256": "83df9b579adc3a5a0662dc4a1a921ffeb682a98b4b98b999b2ee186960bc2bf2"
+  },
+  {
+    "path": "07-Themis-Legal/ASSET-CHECKLIST.md",
+    "bytes": 3290,
+    "sha256": "e16d438f1922d5f86d1cd6776c0cd740328ba9e38579e256e04fef2d6a2cec13"
+  },
+  {
+    "path": "07-Themis-Legal/DEPLOYMENT-CHECKLIST.md",
+    "bytes": 3529,
+    "sha256": "add031fb38a556c82b652436de8f3fd1258c336424803e578e0e62fd84d82b68"
+  },
+  {
+    "path": "07-Themis-Legal/PROJECT-BRIEF.md",
+    "bytes": 2052,
+    "sha256": "8a6ce8f5b790b8a9dbafbec75d2d8b7a6b41da341e439b3f2b2f24fd4e80e904"
+  },
+  {
+    "path": "07-Themis-Legal/TEMPLATE-RESEARCH.md",
+    "bytes": 4785,
+    "sha256": "5639b7de6de6cb673836a2bb815c39da4d1966aaa1e20217d8ca5b5bd9a21516"
+  },
+  {
+    "path": "08-Axia-Accounting/ANTIGRAVITY-PROMPT.md",
+    "bytes": 25130,
+    "sha256": "94c2a5c537629e4cf7c6e8fb189ba658f8de66869bbdec77d13f7c4766b33501"
+  },
+  {
+    "path": "08-Axia-Accounting/ASSET-CHECKLIST.md",
+    "bytes": 3165,
+    "sha256": "1778a0e6afbbfe3767a22af2d4f7feab0c75c56a355566baa3da583bc809d6ac"
+  },
+  {
+    "path": "08-Axia-Accounting/DEPLOYMENT-CHECKLIST.md",
+    "bytes": 3573,
+    "sha256": "b01d8089115120ae6037a0d22509ab76890ab64bafd193d866e053f80625b8c7"
+  },
+  {
+    "path": "08-Axia-Accounting/PROJECT-BRIEF.md",
+    "bytes": 2264,
+    "sha256": "898c057eafe43846aa961000e37c8372b2c724f06f4b4bdb192ab4e84e47ec4f"
+  },
+  {
+    "path": "08-Axia-Accounting/TEMPLATE-RESEARCH.md",
+    "bytes": 4831,
+    "sha256": "47cfb9cb0a594d9ebb69a75724b0edd1de3a9941868b01eaabfe947f2c8c66a0"
+  },
+  {
+    "path": "09-Pedia-Learning-Center/ANTIGRAVITY-PROMPT.md",
+    "bytes": 25499,
+    "sha256": "219ddcd3a43ddce5ac8c6642b9b27a065b3a8d0b2cd59c74a664601acdab9405"
+  },
+  {
+    "path": "09-Pedia-Learning-Center/ASSET-CHECKLIST.md",
+    "bytes": 3307,
+    "sha256": "91bf5a6e1971132a283fe318a6db445163e4c4cf14090b9e94c7177882161ac0"
+  },
+  {
+    "path": "09-Pedia-Learning-Center/DEPLOYMENT-CHECKLIST.md",
+    "bytes": 3738,
+    "sha256": "8e90846d1c02de4c9cad60050918ea8bac3baff7a799d5f89bfafcf30b5fd15e"
+  },
+  {
+    "path": "09-Pedia-Learning-Center/PROJECT-BRIEF.md",
+    "bytes": 2279,
+    "sha256": "22d14150369d899910445c1ceef5b61a075b2e4042ffd0654282f2a39e2f3739"
+  },
+  {
+    "path": "09-Pedia-Learning-Center/TEMPLATE-RESEARCH.md",
+    "bytes": 5286,
+    "sha256": "7905915b95544fbd08ebc55d0583f528328ce7a3de659accef31ab00fb0bc04e"
+  },
+  {
+    "path": "LICENSE-AND-ASSETS.md",
+    "bytes": 2679,
+    "sha256": "21aea6144035af94f4acede86f4859daff99fa4f82262c3a2a9e1088758ccb42"
+  },
+  {
+    "path": "README.md",
+    "bytes": 1326,
+    "sha256": "3050fe26d0edadf0915d85391f13e48354a50ee80a2566120b724ca9b2749abc"
+  }
+]

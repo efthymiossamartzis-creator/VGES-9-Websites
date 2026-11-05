@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="dental-blue-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#245F87"/>
+      <stop offset="100%" stop-color="#16354D"/>
+    </linearGradient>
+    <linearGradient id="ice-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#EDF5FA"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="100%" height="100%" fill="#FFFFFF"/>
+  <rect x="40" y="40" width="1120" height="550" fill="#EDF5FA" stroke="#D3E5F0" stroke-width="2" rx="16"/>
+  <circle cx="950" cy="315" r="160" fill="#FFFFFF"/>
+  <!-- Tooth outline -->
+  <path d="M910,240 C880,240 870,280 880,330 C890,380 920,420 940,420 C950,420 955,390 960,380 C965,390 970,420 980,420 C1000,420 1030,380 1040,330 C1050,280 1040,240 1010,240 C980,240 970,260 960,260 C950,260 940,240 910,240 Z" fill="#245F87"/>
+  <polygon points="1000,270 1005,277 1012,279 1005,282 1003,289 1000,282 993,281 998,277" fill="#FFFFFF"/>
+  <text x="120" y="240" font-family="Arial, sans-serif" font-weight="900" font-size="64" fill="#16354D" letter-spacing="4">LUMEN</text>
+  <text x="120" y="290" font-family="Arial, sans-serif" font-weight="bold" font-size="18" fill="#245F87" letter-spacing="8">DENTAL CLINIC CONCEPT</text>
+  <text x="120" y="380" font-family="Arial, sans-serif" font-weight="bold" font-size="30" fill="#16354D">Μια καθαρή εμπειρία οδοντιατρικής φροντίδας.</text>
+  <text x="120" y="460" font-family="Arial, sans-serif" font-size="16" fill="#6E8E9E">Σχεδιαστικό Demo • VGES Online Websites</text>
+
+</svg>

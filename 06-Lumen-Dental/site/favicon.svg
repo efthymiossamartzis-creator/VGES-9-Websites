@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="16" fill="#EDF5FA"/>
+  <!-- Minimalist tooth crown geometric silhouette -->
+  <path d="M22 16 C16 16 14 24 16 34 C18 44 24 52 28 52 C30 52 31 46 32 44 C33 46 34 52 36 52 C40 52 46 44 48 34 C50 24 48 16 42 16 C36 16 34 20 32 20 C30 20 28 16 22 16 Z" fill="#245F87"/>
+  <!-- Bright clean light sparkle reflection -->
+  <polygon points="40,22 43,26 47,27 43,29 42,33 40,29 36,28 39,26" fill="#FFFFFF"/>
+</svg>

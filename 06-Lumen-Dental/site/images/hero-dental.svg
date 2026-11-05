@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 750" width="1000" height="750">
+  <defs>
+    <linearGradient id="dental-blue-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#245F87"/>
+      <stop offset="100%" stop-color="#16354D"/>
+    </linearGradient>
+    <linearGradient id="ice-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#EDF5FA"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="100%" height="100%" fill="url(#ice-grad)"/>
+  <!-- Bright Architectural Window -->
+  <rect x="550" y="80" width="380" height="420" rx="12" fill="#FFFFFF" stroke="#D3E5F0" stroke-width="2"/>
+  <line x1="740" y1="80" x2="740" y2="500" stroke="#E2EFF7" stroke-width="2"/>
+  <line x1="550" y1="280" x2="930" y2="280" stroke="#E2EFF7" stroke-width="2"/>
+  <!-- Minimalist Ergonomic Dental Chair -->
+  <path d="M220,520 Q320,500 420,440 L480,420 Q560,400 640,430 L660,480 Q560,460 460,520 L300,560 Z" fill="#245F87"/>
+  <!-- Headrest & Base -->
+  <ellipse cx="650" cy="425" rx="35" ry="20" fill="#16354D"/>
+  <rect x="360" y="540" width="40" height="120" rx="4" fill="#6E8E9E"/>
+  <ellipse cx="380" cy="660" rx="90" ry="18" fill="#16354D"/>
+  <!-- Modern Overhead Dental Light Arm -->
+  <path d="M500,80 Q480,220 420,260" stroke="#6E8E9E" stroke-width="8" fill="none"/>
+  <rect x="380" y="260" width="90" height="35" rx="10" fill="#FFFFFF" stroke="#245F87" stroke-width="2"/>
+  <ellipse cx="425" cy="277" rx="30" ry="10" fill="#EDF5FA"/>
+  <!-- Floor line -->
+  <line x1="60" y1="670" x2="940" y2="670" stroke="#D3E5F0" stroke-width="2"/>
+
+</svg>

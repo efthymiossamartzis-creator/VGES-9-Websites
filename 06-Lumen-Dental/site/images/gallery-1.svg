@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+  <defs>
+    <linearGradient id="dental-blue-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#245F87"/>
+      <stop offset="100%" stop-color="#16354D"/>
+    </linearGradient>
+    <linearGradient id="ice-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#EDF5FA"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="100%" height="100%" fill="#FFFFFF"/>
+  <rect x="50" y="50" width="800" height="500" rx="12" fill="#EDF5FA"/>
+  <!-- Digital Precision Sensor Equipment -->
+  <circle cx="450" cy="280" r="140" fill="#FFFFFF" stroke="#245F87" stroke-width="2"/>
+  <circle cx="450" cy="280" r="100" fill="#E2EFF7"/>
+  <circle cx="450" cy="280" r="25" fill="#245F87"/>
+  <rect x="442" y="100" width="16" height="40" rx="4" fill="#B85347"/>
+  <text x="450" y="480" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#16354D" text-anchor="middle">Σύγχρονος Εξοπλισμός Ακριβείας</text>
+
+</svg>

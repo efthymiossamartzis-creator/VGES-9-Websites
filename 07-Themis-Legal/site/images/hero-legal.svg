@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <linearGradient id="navy-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#142236"/>
+      <stop offset="100%" stop-color="#0B131E"/>
+    </linearGradient>
+    <linearGradient id="brass-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A1854D"/>
+      <stop offset="100%" stop-color="#CBB279"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="100%" height="100%" fill="url(#navy-grad)"/>
+  <!-- Classical Architectural Columns & Deep Shadows -->
+  <g opacity="0.35">
+    <rect x="900" y="80" width="80" height="740" fill="#202D3D"/>
+    <rect x="1050" y="80" width="80" height="740" fill="#202D3D"/>
+    <rect x="1200" y="80" width="80" height="740" fill="#202D3D"/>
+    <rect x="1350" y="80" width="80" height="740" fill="#202D3D"/>
+    <rect x="850" y="800" width="650" height="30" fill="#273E58"/>
+  </g>
+  <!-- Diagonal Beam of Warm Daylight -->
+  <polygon points="700,0 1200,0 1600,900 1100,900" fill="#F5F1E8" opacity="0.06"/>
+  <!-- Brass Accent Line -->
+  <line x1="120" y1="450" x2="420" y2="450" stroke="url(#brass-grad)" stroke-width="2"/>
+
+</svg>

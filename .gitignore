@@ -31,3 +31,4 @@ node_modules/
 
 # Backups & nested git artifacts
 .git_original_backup/
+scratch/

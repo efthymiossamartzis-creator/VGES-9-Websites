@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+  <defs>
+    <linearGradient id="navy-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#142236"/>
+      <stop offset="100%" stop-color="#0B131E"/>
+    </linearGradient>
+    <linearGradient id="brass-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A1854D"/>
+      <stop offset="100%" stop-color="#CBB279"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="100%" height="100%" fill="#F5F1E8"/>
+  <rect x="60" y="60" width="780" height="480" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="2" rx="4"/>
+  <!-- Classical Library Architecture in Background -->
+  <g fill="#202D3D" opacity="0.08">
+    <rect x="120" y="100" width="160" height="380"/>
+    <rect x="320" y="100" width="160" height="380"/>
+    <rect x="520" y="100" width="160" height="380"/>
+  </g>
+  <!-- Heavy Oak / Walnut Desk Line -->
+  <rect x="100" y="440" width="700" height="24" rx="2" fill="#273E58"/>
+  <line x1="100" y1="440" x2="800" y2="440" stroke="url(#brass-grad)" stroke-width="2"/>
+  <text x="450" y="300" font-family="Georgia, serif" font-size="24" fill="#142236" text-anchor="middle" font-style="italic">Σαφήνεια &amp; Αυστηρότητα</text>
+
+</svg>

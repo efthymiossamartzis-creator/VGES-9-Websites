@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="16" fill="#FAF5F0"/>
+  <!-- Elegant architectural arch silhouette -->
+  <path d="M16 52 V28 C16 19 23 12 32 12 C41 12 48 19 48 28 V52" fill="none" stroke="#714859" stroke-width="3"/>
+  <!-- Minimal botanical leaf / drop in center -->
+  <path d="M32 24 C32 24 38 31 38 36 C38 39.3 35.3 42 32 42 C28.7 42 26 39.3 26 36 C26 31 32 24 32 24 Z" fill="#B88C72"/>
+  <circle cx="32" cy="48" r="2" fill="#714859"/>
+</svg>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, follow">
+  <title>NISA BEAUTY — Σχεδιαστικό demo | VGES Online</title>
+  <meta name="description" content="Μια ήρεμη εμπειρία ομορφιάς με έμφαση στην απλή παρουσίαση υπηρεσιών και στη διακριτική αισθητική. Σχεδιαστικό concept beauty studio.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="NISA BEAUTY — Σχεδιαστικό demo | VGES Online">
+  <meta property="og:description" content="Μια ήρεμη εμπειρία ομορφιάς με έμφαση στην απλή παρουσίαση υπηρεσιών και στη διακριτική αισθητική. Σχεδιαστικό concept beauty studio.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/og-preview.svg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Accessible Skip Link -->
+  <a href="#mainContent" class="skip-link">Μετάβαση στο κύριο περιεχόμενο</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="#top" class="brand-wrapper" aria-label="NISA BEAUTY Αρχική">
+        <img src="favicon.svg" alt="" class="brand-logo" width="32" height="32" aria-hidden="true">
+        <div class="brand-text">
+          <span class="brand-title">NISA</span>
+          <span class="brand-subtitle">BEAUTY</span>
+        </div>
+        <span class="badge-demo">Σχεδιαστικό Demo</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Άνοιγμα μενού">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <nav id="primaryNav" class="site-nav" aria-label="Κύρια πλοήγηση">
+        <a href="#services" class="nav-link">Υπηρεσίες</a>
+        <a href="#about" class="nav-link">Φιλοσοφία</a>
+        <a href="#ritual" class="nav-link">Εμπειρία</a>
+        <a href="#gallery" class="nav-link">Χώρος</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#contact" class="nav-link">Επικοινωνία</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="mainContent">
+    <!-- Hero Section -->
+    <section id="top" class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <span class="mono-tag">Aesthetic Care &amp; Wellness Concept</span>
+            <h1 class="hero-title">Χώρος για τη δική σου φροντίδα.</h1>
+            <p class="hero-lead">
+              Μια ήρεμη εμπειρία ομορφιάς με έμφαση στην απλή παρουσίαση υπηρεσιών και στη διακριτική αισθητική. Σχεδιαστικό concept beauty studio.
+            </p>
+            <div class="hero-actions">
+              <a href="#services" class="btn btn-primary">Εξερεύνησε τις υπηρεσίες</a>
+              <a href="#about" class="btn btn-secondary">Δες την αισθητική</a>
+            </div>
+          </div>
+
+          <div class="hero-arch-card">
+            <img src="images/hero-arch.svg" alt="Αρχιτεκτονική αψίδα με βοτανική απεικόνιση φροντίδας" class="hero-arch-img" width="800" height="1000" fetchpriority="high">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="mono-tag">Επιλογή Περιποίησης</span>
+          <h2>Υπηρεσίες &amp; Φροντίδα</h2>
+          <p>
+            Ενδεικτική παρουσίαση εμπειριών περιποίησης προσώπου και σώματος, σχεδιασμένων για αρμονία και αναζωογόνηση.
+          </p>
+        </div>
+
+        <!-- Accessible Tabs Navigation -->
+        <div class="tab-nav" role="tablist" aria-label="Κατηγορίες υπηρεσιών">
+          <button class="tab-btn" role="tab" id="tab-face" aria-controls="pane-face" aria-selected="true">Πρόσωπο</button>
+          <button class="tab-btn" role="tab" id="tab-body" aria-controls="pane-body" aria-selected="false">Σώμα</button>
+          <button class="tab-btn" role="tab" id="tab-daily" aria-controls="pane-daily" aria-selected="false">Καθημερινή φροντίδα</button>
+        </div>
+
+        <!-- Tab 1: Face -->
+        <div id="pane-face" class="tab-pane active" role="tabpanel" aria-labelledby="tab-face">
+          <div class="treatment-grid">
+            <div class="treatment-card">
+              <span class="mono-tag">01 / Facial Treatment</span>
+              <h3 class="treatment-title">Περιποίηση προσώπου</h3>
+              <p class="treatment-desc">
+                Ενδεικτική παρουσίαση μιας εμπειρίας καθαρισμού και φροντίδας της επιδερμίδας με φυσικά έλαια και ήπια βοτανικά εκχυλίσματα.
+              </p>
+            </div>
+            <div class="treatment-card">
+              <span class="mono-tag">02 / Deep Hydration</span>
+              <h3 class="treatment-title">Ενυδατική φροντίδα</h3>
+              <p class="treatment-desc">
+                Μια ήπια σχεδιαστική πρόταση με έμφαση στην αίσθηση βαθιάς περιποίησης, αποκατάστασης της υγρασίας και λάμψης.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2: Body -->
+        <div id="pane-body" class="tab-pane" role="tabpanel" aria-labelledby="tab-body">
+          <div class="treatment-grid">
+            <div class="treatment-card">
+              <span class="mono-tag">03 / Body Wellness</span>
+              <h3 class="treatment-title">Χαλαρωτική περιποίηση σώματος</h3>
+              <p class="treatment-desc">
+                Παρουσίαση υπηρεσίας με ήρεμη ατμόσφαιρα, αρωματοθεραπεία και ιδιαίτερη προσοχή στην άνεση και αποφόρτιση των μυών.
+              </p>
+            </div>
+            <div class="treatment-card">
+              <span class="mono-tag">04 / Exfoliation Ritual</span>
+              <h3 class="treatment-title">Ήπια απολέπιση</h3>
+              <p class="treatment-desc">
+                Τελετουργικό ανανέωσης με φυσικούς κόκκους και ενυδατικά αιθέρια έλαια για λείανση και απαλότητα.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3: Daily Routine -->
+        <div id="pane-daily" class="tab-pane" role="tabpanel" aria-labelledby="tab-daily">
+          <div class="treatment-grid">
+            <div class="treatment-card">
+              <span class="mono-tag">05 / Home Routine</span>
+              <h3 class="treatment-title">Καθημερινή ρουτίνα φροντίδας</h3>
+              <p class="treatment-desc">
+                Θεματική ενότητα για την οργάνωση μιας προσωπικής εμπειρίας περιποίησης στο σπίτι με απλά βήματα και ποιοτικές υφές.
+              </p>
+            </div>
+            <div class="treatment-card">
+              <span class="mono-tag">06 / Botanical Balance</span>
+              <h3 class="treatment-title">Βοτανική εξισορρόπηση</h3>
+              <p class="treatment-desc">
+                Συμβουλές και καθοδήγηση για τη χρήση φυσικών αντιοξειδωτικών στη διατήρηση μιας υγιούς και ήρεμης επιδερμίδας.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-visual">
+            <img src="images/about-interior.svg" alt="Χώρος χαλάρωσης με αρχιτεκτονική αψίδα και κεραμικά" class="about-img" width="900" height="600" loading="lazy" decoding="async">
+          </div>
+
+          <div class="about-content">
+            <span class="mono-tag">Η Φιλοσοφία Μας</span>
+            <h2 class="about-quote">Λιγότερος θόρυβος. Περισσότερη φροντίδα.</h2>
+            <p class="about-text">
+              Η ιδέα του <strong>NISA BEAUTY</strong> είναι μια καθαρή, ήρεμη ψηφιακή εμπειρία. Το περιεχόμενο παρουσιάζει ενδεικτικές υπηρεσίες ομορφιάς και δεν αντιστοιχεί σε λειτουργούσα κλινική ή σε πιστοποιημένο επαγγελματία.
+            </p>
+            <p class="about-text">
+              Πιστεύουμε στην αξία των φυσικών ρυθμών, στην απλότητα των συστατικών και στη διακριτική φροντίδα χωρίς υπερβολές. Κάθε στοιχείο του χώρου είναι σχεδιασμένο για να προσφέρει ηρεμία και αίσθηση ασφάλειας.
+            </p>
+            <a href="#ritual" class="btn btn-secondary" style="margin-top: 16px;">Το Τελετουργικό</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ritual 3-Step Section -->
+    <section id="ritual" class="ritual-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="mono-tag">Η Εμπειρία</span>
+          <h2>Τρία Βήματα Φροντίδας</h2>
+          <p>Μια δομημένη ροή σχεδιασμένη να σέβεται τον χρόνο και τις προσωπικές σας ανάγκες.</p>
+        </div>
+
+        <div class="ritual-grid">
+          <div class="ritual-step">
+            <div class="ritual-num">01 / ΒΗΜΑ ΠΡΩΤΟ</div>
+            <h3>Γνωριμία</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">
+              Συζήτηση για τις καθημερινές συνήθειες, τις ευαισθησίες της επιδερμίδας και τις επιθυμίες σας.
+            </p>
+          </div>
+
+          <div class="ritual-step">
+            <div class="ritual-num">02 / ΒΗΜΑ ΔΕΥΤΕΡΟ</div>
+            <h3>Επιλογή φροντίδας</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">
+              Προσαρμογή των κατάλληλων ελαίων, υφών και θερμοκρασιών στις δικές σας ανάγκες.
+            </p>
+          </div>
+
+          <div class="ritual-step">
+            <div class="ritual-num">03 / ΒΗΜΑ ΤΡΙΤΟ</div>
+            <h3>Εμπειρία</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">
+              Απόλυτη ηρεμία, αργές κινήσεις και χρόνος αποφόρτισης σε έναν χώρο χωρίς βιασύνη.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section (4 Items with Lightbox) -->
+    <section id="gallery" class="gallery-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="mono-tag">Ο Χώρος &amp; Οι Υφές</span>
+          <h2>Στιγμές Ηρεμίας</h2>
+          <p>Επιλέξτε οποιαδήποτε εικόνα για μεγέθυνση και προβολή lightbox.</p>
+        </div>
+
+        <div class="nisa-gallery-grid">
+          <a href="images/gallery-1.svg" class="nisa-gallery-item" data-caption="Φυσικές υφές και αγνά βοτανικά έλαια">
+            <img src="images/gallery-1.svg" alt="Φυσικά έλαια και σταγονόμετρο σε ζεστό φόντο" class="nisa-gallery-img" width="800" height="1000" loading="lazy" decoding="async">
+          </a>
+
+          <a href="images/gallery-2.svg" class="nisa-gallery-item" data-caption="Αψίδες και λινοί χώροι χαλάρωσης">
+            <img src="images/gallery-2.svg" alt="Χώρος χαλάρωσης με υφάσματα και απαλό φωτισμό" class="nisa-gallery-img" width="800" height="1000" loading="lazy" decoding="async">
+          </a>
+
+          <a href="images/gallery-3.svg" class="nisa-gallery-item" data-caption="Τελετουργικό φροντίδας προσώπου">
+            <img src="images/gallery-3.svg" alt="Μινιμαλιστική απεικόνιση περιποίησης προσώπου" class="nisa-gallery-img" width="800" height="1000" loading="lazy" decoding="async">
+          </a>
+
+          <a href="images/gallery-4.svg" class="nisa-gallery-item" data-caption="Λεπτομέρειες ευεξίας και φυσικά υλικά">
+            <img src="images/gallery-4.svg" alt="Φυσικά υλικά και αποξηραμένα άνθη σε τραβερτίνη" class="nisa-gallery-img" width="800" height="1000" loading="lazy" decoding="async">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Native Details Section -->
+    <section id="faq" class="faq-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="mono-tag">Ερωτήσεις &amp; Απαντήσεις</span>
+          <h2>Συχνές Ερωτήσεις</h2>
+        </div>
+
+        <div class="faq-container">
+          <details class="faq-item">
+            <summary>Περιλαμβάνονται ιατρικές θεραπείες;</summary>
+            <p>
+              Το demo παρουσιάζει μόνο ενδεικτικές υπηρεσίες ομορφιάς και ευεξίας. Δεν δηλώνει παροχή ιατρικών πράξεων, ενέσιμων ή κλινικών θεραπειών.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Η φόρμα κλείνει πραγματικό ραντεβού;</summary>
+            <p>
+              Όχι. Η δοκιμή είναι καθαρά τοπική και δεν αποστέλλει ή αποθηκεύει στοιχεία σε κανέναν εξωτερικό διακομιστή.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-layout">
+          <div class="contact-left">
+            <span class="mono-tag">Δοκιμή Εμπειρίας</span>
+            <h2>Δες πώς θα λειτουργούσε η επικοινωνία</h2>
+            <p style="color: var(--text-muted); margin-bottom: 24px;">
+              Η παρακάτω φόρμα είναι μια τοπική δοκιμή της εμπειρίας χρήσης. Μην εισάγεις πραγματικά προσωπικά ή ευαίσθητα δεδομένα.
+            </p>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">
+              Σε ένα πραγματικό εμπορικό site, η φόρμα συνδέεται με σύστημα κρατήσεων ή ασφαλή διακομιστή ενημέρωσης ραντεβού.
+            </p>
+          </div>
+
+          <div class="form-card">
+            <div class="demo-banner">
+              ⚠️ Demo φόρμα — δεν αποστέλλει στοιχεία
+            </div>
+
+            <form id="demoContactForm" novalidate>
+              <div class="form-group">
+                <label for="nisaName">Ονοματεπώνυμο δείγματος *</label>
+                <input type="text" id="nisaName" class="form-control" placeholder="π.χ. Ελένη Δημητρίου" required>
+              </div>
+
+              <div class="form-group">
+                <label for="nisaEmail">Email δείγματος *</label>
+                <input type="email" id="nisaEmail" class="form-control" placeholder="sample@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="nisaCategory">Κατηγορία ενδιαφέροντος *</label>
+                <select id="nisaCategory" class="form-control" required>
+                  <option value="" disabled selected>Επιλέξτε ενότητα...</option>
+                  <option value="face">Περιποίηση προσώπου &amp; Ενυδάτωση</option>
+                  <option value="body">Χαλαρωτική περιποίηση σώματος</option>
+                  <option value="routine">Καθημερινή ρουτίνα φροντίδας</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="nisaNotes">Προτιμήσεις περιποίησης (προαιρετικό)</label>
+                <textarea id="nisaNotes" class="form-control" rows="3" placeholder="Ενδεικτικές παρατηρήσεις για την εμπειρία σας..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">Δοκιμή φόρμας</button>
+
+              <div id="formFeedback" class="form-feedback" role="alert">
+                ✅ Η δοκιμή ολοκληρώθηκε τοπικά. Δεν στάλθηκε μήνυμα και δεν έγινε κράτηση.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#top" class="brand-wrapper" aria-label="Επιστροφή στην κορυφή" style="color: #FAF5F0;">
+          <div class="brand-text">
+            <span class="brand-title" style="color: #FAF5F0; font-size: 1.5rem;">NISA</span>
+            <span class="brand-subtitle" style="color: #D4AA92;">BEAUTY</span>
+          </div>
+        </a>
+
+        <div class="footer-links">
+          <a href="#services">Υπηρεσίες</a>
+          <a href="#about">Φιλοσοφία</a>
+          <a href="#ritual">Εμπειρία</a>
+          <a href="#gallery">Χώρος</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Επικοινωνία</a>
+        </div>
+      </div>
+
+      <p class="footer-disclaimer">
+        Η παρούσα σελίδα είναι σχεδιαστικό demo. Δεν λειτουργεί πραγματική επιχείρηση μέσω αυτού του website και δεν πραγματοποιούνται κρατήσεις ή αποστολές μηνυμάτων.
+      </p>
+
+      <div class="footer-copy">
+        &copy; 2026 NISA BEAUTY — Σχεδιαστικό Demo για το VGES Online Websites portfolio.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div id="lightboxModal" class="lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Προβολή εικόνας">
+    <button class="lightbox-close" aria-label="Κλείσιμο (Esc)">&times;</button>
+    <button class="lightbox-prev" aria-label="Προηγούμενη">&#8592;</button>
+    <button class="lightbox-next" aria-label="Επόμενη">&#8594;</button>
+
+    <div class="lightbox-content">
+      <img src="" alt="" class="lightbox-img">
+      <div class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Client Script -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>

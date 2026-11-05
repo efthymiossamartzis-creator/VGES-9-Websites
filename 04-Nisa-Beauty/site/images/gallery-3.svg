@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <linearGradient id="warm-blush" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF5F0"/>
+      <stop offset="60%" stop-color="#F2E6DF"/>
+      <stop offset="100%" stop-color="#E5D3C8"/>
+    </linearGradient>
+    <linearGradient id="plum-soft" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8A5A6D"/>
+      <stop offset="100%" stop-color="#5B3847"/>
+    </linearGradient>
+    <linearGradient id="clay-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B88C72"/>
+      <stop offset="100%" stop-color="#D4AA92"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="100%" height="100%" fill="#FAF5F0"/>
+  <!-- Clean Aesthetic Facial Elements -->
+  <circle cx="400" cy="420" r="220" fill="#F2E6DF"/>
+  <path d="M280,480 Q400,540 520,480" stroke="#714859" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <ellipse cx="340" cy="380" rx="30" ry="15" fill="#FAF5F0"/>
+  <ellipse cx="460" cy="380" rx="30" ry="15" fill="#FAF5F0"/>
+  <text x="400" y="850" font-family="Georgia, serif" font-size="20" fill="#714859" text-anchor="middle">Φροντίδα Προσώπου</text>
+
+</svg>

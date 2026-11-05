@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <linearGradient id="warm-blush" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF5F0"/>
+      <stop offset="60%" stop-color="#F2E6DF"/>
+      <stop offset="100%" stop-color="#E5D3C8"/>
+    </linearGradient>
+    <linearGradient id="plum-soft" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8A5A6D"/>
+      <stop offset="100%" stop-color="#5B3847"/>
+    </linearGradient>
+    <linearGradient id="clay-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B88C72"/>
+      <stop offset="100%" stop-color="#D4AA92"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="100%" height="100%" fill="#FAF5F0"/>
+  <rect x="100" y="100" width="600" height="800" rx="300" fill="#F2E6DF"/>
+  <!-- Dropper Bottle -->
+  <rect x="360" y="380" width="80" height="360" rx="15" fill="#714859"/>
+  <rect x="380" y="320" width="40" height="60" fill="#B88C72"/>
+  <circle cx="400" cy="290" r="25" fill="#352B33"/>
+  <circle cx="400" cy="520" r="14" fill="#FAF5F0" opacity="0.8"/>
+  <text x="400" y="850" font-family="Georgia, serif" font-size="20" fill="#714859" text-anchor="middle">Φυσικά Έλαια &amp; Υφές</text>
+
+</svg>

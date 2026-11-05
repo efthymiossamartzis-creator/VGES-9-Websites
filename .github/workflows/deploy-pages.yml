@@ -1,0 +1,130 @@
+name: Deploy VGES Demo Websites to Cloudflare Pages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '01-Aurelio-Barbershop/site/**'
+      - '02-Mason-Elia/site/**'
+      - '03-Fos-Photography/site/**'
+      - '04-Nisa-Beauty/site/**'
+      - '05-Areti-Medical/site/**'
+      - '06-Lumen-Dental/site/**'
+      - '07-Themis-Legal/site/**'
+      - '08-Axia-Accounting/site/**'
+      - '09-Pedia-Learning-Center/site/**'
+      - '.github/workflows/deploy-pages.yml'
+  workflow_dispatch:
+
+jobs:
+  detect-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout monorepo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Wrangler
+        run: npm install -g wrangler@latest
+
+      # 01 - Aurelio Barbershop
+      - name: Deploy Aurelio Barbershop
+        if: github.event_name == 'workflow_dispatch' || contains(github.event.commits[0].modified, '01-Aurelio-Barbershop') || contains(github.event.commits[0].added, '01-Aurelio-Barbershop')
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          wrangler pages deploy 01-Aurelio-Barbershop/site --project-name vges-aurelio --branch main --commit-dirty=true
+
+      # 02 - Mason Elia
+      - name: Deploy Mason Elia
+        if: github.event_name == 'workflow_dispatch' || contains(github.event.commits[0].modified, '02-Mason-Elia') || contains(github.event.commits[0].added, '02-Mason-Elia')
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          wrangler pages deploy 02-Mason-Elia/site --project-name vges-mason-elia --branch main --commit-dirty=true
+
+      # 03 - Fos Photography
+      - name: Deploy Fos Photography
+        if: github.event_name == 'workflow_dispatch' || contains(github.event.commits[0].modified, '03-Fos-Photography') || contains(github.event.commits[0].added, '03-Fos-Photography')
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -d "03-Fos-Photography/site" ]; then
+            wrangler pages deploy 03-Fos-Photography/site --project-name vges-fos-photography --branch main --commit-dirty=true
+          fi
+
+      # 04 - Nisa Beauty
+      - name: Deploy Nisa Beauty
+        if: github.event_name == 'workflow_dispatch' || contains(github.event.commits[0].modified, '04-Nisa-Beauty') || contains(github.event.commits[0].added, '04-Nisa-Beauty')
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -d "04-Nisa-Beauty/site" ]; then
+            wrangler pages deploy 04-Nisa-Beauty/site --project-name vges-nisa-beauty --branch main --commit-dirty=true
+          fi
+
+      # 05 - Areti Medical
+      - name: Deploy Areti Medical
+        if: github.event_name == 'workflow_dispatch' || contains(github.event.commits[0].modified, '05-Areti-Medical') || contains(github.event.commits[0].added, '05-Areti-Medical')
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -d "05-Areti-Medical/site" ]; then
+            wrangler pages deploy 05-Areti-Medical/site --project-name vges-areti-medical --branch main --commit-dirty=true
+          fi
+
+      # 06 - Lumen Dental
+      - name: Deploy Lumen Dental
+        if: github.event_name == 'workflow_dispatch' || contains(github.event.commits[0].modified, '06-Lumen-Dental') || contains(github.event.commits[0].added, '06-Lumen-Dental')
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -d "06-Lumen-Dental/site" ]; then
+            wrangler pages deploy 06-Lumen-Dental/site --project-name vges-lumen-dental --branch main --commit-dirty=true
+          fi
+
+      # 07 - Themis Legal
+      - name: Deploy Themis Legal
+        if: github.event_name == 'workflow_dispatch' || contains(github.event.commits[0].modified, '07-Themis-Legal') || contains(github.event.commits[0].added, '07-Themis-Legal')
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -d "07-Themis-Legal/site" ]; then
+            wrangler pages deploy 07-Themis-Legal/site --project-name vges-themis-legal --branch main --commit-dirty=true
+          fi
+
+      # 08 - Axia Accounting
+      - name: Deploy Axia Accounting
+        if: github.event_name == 'workflow_dispatch' || contains(github.event.commits[0].modified, '08-Axia-Accounting') || contains(github.event.commits[0].added, '08-Axia-Accounting')
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -d "08-Axia-Accounting/site" ]; then
+            wrangler pages deploy 08-Axia-Accounting/site --project-name vges-axia-accounting --branch main --commit-dirty=true
+          fi
+
+      # 09 - Pedia Learning Center
+      - name: Deploy Pedia Learning Center
+        if: github.event_name == 'workflow_dispatch' || contains(github.event.commits[0].modified, '09-Pedia-Learning-Center') || contains(github.event.commits[0].added, '09-Pedia-Learning-Center')
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -d "09-Pedia-Learning-Center/site" ]; then
+            wrangler pages deploy 09-Pedia-Learning-Center/site --project-name vges-pedia-learning --branch main --commit-dirty=true
+          fi

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <defs>
+    <filter id="grain" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" result="noise" />
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.08 0" in="noise" result="coloredNoise" />
+      <feComposite operator="in" in2="SourceGraphic" />
+      <feBlend mode="multiply" in="SourceGraphic" in2="coloredNoise" />
+    </filter>
+    <linearGradient id="monochrome-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a2a2a"/>
+      <stop offset="50%" stop-color="#141414"/>
+      <stop offset="100%" stop-color="#080808"/>
+    </linearGradient>
+    <linearGradient id="warm-shadow" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#181716"/>
+      <stop offset="60%" stop-color="#242220"/>
+      <stop offset="100%" stop-color="#3c3834"/>
+    </linearGradient>
+    <linearGradient id="dusk-mist" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1f2421"/>
+      <stop offset="50%" stop-color="#363d37"/>
+      <stop offset="100%" stop-color="#6B7562"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="#1a1816"/>
+          <ellipse cx="400" cy="500" rx="180" ry="60" fill="#2e2a27"/>
+          <path d="M250,520 C220,420 300,360 380,410 C340,460 300,510 250,520 Z" fill="#443e39"/>
+          <path d="M550,520 C580,420 500,360 420,410 C460,460 500,510 550,520 Z" fill="#443e39"/>
+          <circle cx="400" cy="400" r="70" fill="none" stroke="#F3F0E9" stroke-width="2" opacity="0.4"/>
+</svg>

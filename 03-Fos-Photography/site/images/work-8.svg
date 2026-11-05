@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" width="900" height="700">
+  <defs>
+    <filter id="grain" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" result="noise" />
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.08 0" in="noise" result="coloredNoise" />
+      <feComposite operator="in" in2="SourceGraphic" />
+      <feBlend mode="multiply" in="SourceGraphic" in2="coloredNoise" />
+    </filter>
+    <linearGradient id="monochrome-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a2a2a"/>
+      <stop offset="50%" stop-color="#141414"/>
+      <stop offset="100%" stop-color="#080808"/>
+    </linearGradient>
+    <linearGradient id="warm-shadow" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#181716"/>
+      <stop offset="60%" stop-color="#242220"/>
+      <stop offset="100%" stop-color="#3c3834"/>
+    </linearGradient>
+    <linearGradient id="dusk-mist" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1f2421"/>
+      <stop offset="50%" stop-color="#363d37"/>
+      <stop offset="100%" stop-color="#6B7562"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="#131714"/>
+          <!-- Vertical tree trunks -->
+          <g fill="#0b0e0c">
+            <rect x="90" y="0" width="30" height="700"/>
+            <rect x="220" y="0" width="22" height="700"/>
+            <rect x="360" y="0" width="45" height="700"/>
+            <rect x="520" y="0" width="35" height="700"/>
+            <rect x="680" y="0" width="28" height="700"/>
+            <rect x="800" y="0" width="40" height="700"/>
+          </g>
+          <!-- Sunbeams cutting through -->
+          <polygon points="150,0 250,0 600,700 450,700" fill="#F3F0E9" opacity="0.12"/>
+          <polygon points="400,0 480,0 850,700 750,700" fill="#F3F0E9" opacity="0.08"/>
+</svg>

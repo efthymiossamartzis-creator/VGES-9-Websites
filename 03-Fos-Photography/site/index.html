@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, follow">
+  <title>FOS PHOTOGRAPHY — Σχεδιαστικό demo | VGES Online</title>
+  <meta name="description" content="Πρόσωπα, τοπία και μικρές στιγμές μέσα από μια επιμελημένη φωτογραφική ματιά. Ενδεικτικές συλλογές για ένα image-first portfolio concept.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="FOS PHOTOGRAPHY — Σχεδιαστικό demo | VGES Online">
+  <meta property="og:description" content="Πρόσωπα, τοπία και μικρές στιγμές μέσα από μια επιμελημένη φωτογραφική ματιά. Ενδεικτικές συλλογές για ένα image-first portfolio concept.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/og-preview.svg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Accessible Skip Link -->
+  <a href="#mainContent" class="skip-link">Μετάβαση στο κύριο περιεχόμενο</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="#top" class="brand-wrapper" aria-label="FOS PHOTOGRAPHY Αρχική">
+        <img src="favicon.svg" alt="" class="brand-logo" width="32" height="32" aria-hidden="true">
+        <span class="brand-title">FOS</span>
+        <span class="badge-demo">Σχεδιαστικό Demo</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Άνοιγμα μενού πλοήγησης">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <nav id="primaryNav" class="site-nav" aria-label="Κύρια πλοήγηση">
+        <a href="#work" class="nav-link">Συλλογές</a>
+        <a href="#featured" class="nav-link">Ιστορίες</a>
+        <a href="#about" class="nav-link">Προσέγγιση</a>
+        <a href="#services" class="nav-link">Φωτογραφίσεις</a>
+        <a href="#contact" class="nav-link">Επικοινωνία</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="mainContent">
+    <!-- Hero Section -->
+    <section id="top" class="hero-section">
+      <div class="hero-media-wrapper">
+        <img src="images/hero.svg" alt="Δραματική αρχιτεκτονική σύνθεση φωτός και σκιάς" class="hero-img" width="1920" height="1080" fetchpriority="high">
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-brand-watermark" aria-hidden="true">FOS</div>
+          <h1 class="hero-title">Το φως γίνεται ιστορία.</h1>
+          <p class="hero-lead">
+            Πρόσωπα, τοπία και μικρές στιγμές μέσα από μια επιμελημένη φωτογραφική ματιά. Ενδεικτικές συλλογές για ένα image-first portfolio concept.
+          </p>
+          <div class="hero-actions">
+            <a href="#work" class="btn btn-primary">Δες τις συλλογές</a>
+            <a href="#about" class="btn btn-secondary">Η προσέγγιση</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Gallery Section -->
+    <section id="work" class="work-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="mono-caption">Επιμελημένες Συλλογές</span>
+          <h2>Επιλογή Έργων</h2>
+          <p>
+            Εξερευνήστε τις θεματικές ενότητες. Επιλέξτε οποιαδήποτε εικόνα για προβολή πλήρους οθόνης με διαδραστικό lightbox.
+          </p>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="filter-bar" role="toolbar" aria-label="Φίλτρα συλλογών">
+          <button class="filter-btn" data-filter="all" aria-pressed="true">
+            Όλα <span class="count-badge" data-badge="all">(12)</span>
+          </button>
+          <button class="filter-btn" data-filter="portraits" aria-pressed="false">
+            Πορτρέτα <span class="count-badge" data-badge="portraits">(4)</span>
+          </button>
+          <button class="filter-btn" data-filter="landscapes" aria-pressed="false">
+            Τοπία <span class="count-badge" data-badge="landscapes">(4)</span>
+          </button>
+          <button class="filter-btn" data-filter="details" aria-pressed="false">
+            Λεπτομέρειες <span class="count-badge" data-badge="details">(4)</span>
+          </button>
+        </div>
+
+        <!-- Gallery Grid (12 Items) -->
+        <div class="gallery-grid" id="galleryGrid">
+          <!-- 1. Portraits -->
+          <article class="gallery-item portrait" data-category="portraits">
+            <a href="images/work-1.svg" class="gallery-thumb-link" aria-label="Προβολή: Σιλουέτα στο πρωινό φως">
+              <img src="images/work-1.svg" alt="Μονόχρωμη σιλουέτα προφίλ με έντονο πρωινό φως" class="gallery-img" width="700" height="900" loading="lazy" decoding="async">
+            </a>
+            <div class="gallery-meta">
+              <span class="gallery-title">Σιλουέτα στο πρωινό φως</span>
+              <span class="mono-caption">Πορτρέτα</span>
+            </div>
+          </article>
+
+          <article class="gallery-item portrait" data-category="portraits">
+            <a href="images/work-2.svg" class="gallery-thumb-link" aria-label="Προβολή: Έκφραση και σκιά">
+              <img src="images/work-2.svg" alt="Πορτρέτο με σκιές από περσίδες παραθύρου" class="gallery-img" width="700" height="900" loading="lazy" decoding="async">
+            </a>
+            <div class="gallery-meta">
+              <span class="gallery-title">Έκφραση και σκιά</span>
+              <span class="mono-caption">Πορτρέτα</span>
+            </div>
+          </article>
+
+          <article class="gallery-item portrait" data-category="portraits">
+            <a href="images/work-3.svg" class="gallery-thumb-link" aria-label="Προβολή: Το βλέμμα του καλλιτέχνη">
+              <img src="images/work-3.svg" alt="Κοντινό δραματικό πορτρέτο με εστίαση στο βλέμμα" class="gallery-img" width="700" height="900" loading="lazy" decoding="async">
+            </a>
+            <div class="gallery-meta">
+              <span class="gallery-title">Το βλέμμα του καλλιτέχνη</span>
+              <span class="mono-caption">Πορτρέτα</span>
+            </div>
+          </article>
+
+          <article class="gallery-item portrait" data-category="portraits">
+            <a href="images/work-4.svg" class="gallery-thumb-link" aria-label="Προβολή: Περίγραμμα στο λυκόφως">
+              <img src="images/work-4.svg" alt="Υπαίθρια σιλουέτα με οπίσθιο θερμό φωτισμό" class="gallery-img" width="700" height="900" loading="lazy" decoding="async">
+            </a>
+            <div class="gallery-meta">
+              <span class="gallery-title">Περίγραμμα στο λυκόφως</span>
+              <span class="mono-caption">Πορτρέτα</span>
+            </div>
+          </article>
+
+          <!-- 2. Landscapes -->
+          <article class="gallery-item" data-category="landscapes">
+            <a href="images/work-5.svg" class="gallery-thumb-link" aria-label="Προβολή: Αιγαιοπελαγίτικος ορίζοντας">
+              <img src="images/work-5.svg" alt="Μινιμαλιστικός θαλάσσιος ορίζοντας με απαλή ομίχλη" class="gallery-img" width="900" height="700" loading="lazy" decoding="async">
+            </a>
+            <div class="gallery-meta">
+              <span class="gallery-title">Αιγαιοπελαγίτικος ορίζοντας</span>
+              <span class="mono-caption">Τοπία</span>
+            </div>
+          </article>
+
+          <article class="gallery-item" data-category="landscapes">
+            <a href="images/work-6.svg" class="gallery-thumb-link" aria-label="Προβολή: Κορυφογραμμή στην ομίχλη">
+              <img src="images/work-6.svg" alt="Διαδοχικές κορυφογραμμές βουνών μέσα σε σούρουπο" class="gallery-img" width="900" height="700" loading="lazy" decoding="async">
+            </a>
+            <div class="gallery-meta">
+              <span class="gallery-title">Κορυφογραμμή στην ομίχλη</span>
+              <span class="mono-caption">Τοπία</span>
+            </div>
+          </article>
+
+          <article class="gallery-item" data-category="landscapes">
+            <a href="images/work-7.svg" class="gallery-thumb-link" aria-label="Προβολή: Μοναχικός βράχος στην ακτή">
+              <img src="images/work-7.svg" alt="Μακρά έκθεση κύματος γύρω από μονολιθικό βράχο" class="gallery-img" width="900" height="700" loading="lazy" decoding="async">
+            </a>
+            <div class="gallery-meta">
+              <span class="gallery-title">Μοναχικός βράχος στην ακτή</span>
+              <span class="mono-caption">Τοπία</span>
+            </div>
+          </article>
+
+          <article class="gallery-item" data-category="landscapes">
+            <a href="images/work-8.svg" class="gallery-thumb-link" aria-label="Προβολή: Σιωπηλό δάσος πεύκων">
+              <img src="images/work-8.svg" alt="Ηλιαχτίδες να διαπερνούν κορμούς δέντρων στο δάσος" class="gallery-img" width="900" height="700" loading="lazy" decoding="async">
+            </a>
+            <div class="gallery-meta">
+              <span class="gallery-title">Σιωπηλό δάσος πεύκων</span>
+              <span class="mono-caption">Τοπία</span>
+            </div>
+          </article>
+
+          <!-- 3. Details -->
+          <article class="gallery-item" data-category="details">
+            <a href="images/work-9.svg" class="gallery-thumb-link" aria-label="Προβολή: Γεωμετρία σκιάς και μαρμάρου">
+              <img src="images/work-9.svg" alt="Αρχιτεκτονική γωνία και σκιά πάνω σε λευκό μάρμαρο" class="gallery-img" width="800" height="800" loading="lazy" decoding="async">
+            </a>
+            <div class="gallery-meta">
+              <span class="gallery-title">Γεωμετρία σκιάς και μαρμάρου</span>
+              <span class="mono-caption">Λεπτομέρειες</span>
+            </div>
+          </article>
+
+          <article class="gallery-item" data-category="details">
+            <a href="images/work-10.svg" class="gallery-thumb-link" aria-label="Προβολή: Σταγόνα σε φύλλο ελιάς">
+              <img src="images/work-10.svg" alt="Μακροφωτογραφία διάθλασης φωτός σε σταγόνα φύλλου" class="gallery-img" width="800" height="800" loading="lazy" decoding="async">
+            </a>
+            <div class="gallery-meta">
+              <span class="gallery-title">Σταγόνα σε φύλλο ελιάς</span>
+              <span class="mono-caption">Λεπτομέρειες</span>
+            </div>
+          </article>
+
+          <article class="gallery-item" data-category="details">
+            <a href="images/work-11.svg" class="gallery-thumb-link" aria-label="Προβολή: Χέρια κεραμίστα">
+              <img src="images/work-11.svg" alt="Χέρια χειροτέχνη να διαμορφώνουν υγρό πηλό" class="gallery-img" width="800" height="800" loading="lazy" decoding="async">
+            </a>
+            <div class="gallery-meta">
+              <span class="gallery-title">Χέρια κεραμίστα</span>
+              <span class="mono-caption">Λεπτομέρειες</span>
+            </div>
+          </article>
+
+          <article class="gallery-item" data-category="details">
+            <a href="images/work-12.svg" class="gallery-thumb-link" aria-label="Προβολή: Φως σε λινό ύφασμα">
+              <img src="images/work-12.svg" alt="Πρωινό φως να αναδεικνύει την υφή λινού υφάσματος" class="gallery-img" width="800" height="800" loading="lazy" decoding="async">
+            </a>
+            <div class="gallery-meta">
+              <span class="gallery-title">Φως σε λινό ύφασμα</span>
+              <span class="mono-caption">Λεπτομέρειες</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Diptych Section -->
+    <section id="featured" class="featured-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="mono-caption" style="color: var(--accent-light);">Ειδικό Αφιέρωμα</span>
+          <h2 style="color: var(--text-light);">Μικρές ιστορίες φωτός</h2>
+          <p style="color: var(--text-light-muted);">
+            Δύο μελέτες που αναδεικνύουν τη δύναμη της απλότητας και της αρχιτεκτονικής συμμετρίας.
+          </p>
+        </div>
+
+        <div class="diptych-grid">
+          <div class="diptych-card">
+            <div class="diptych-img-wrap">
+              <img src="images/featured-1.svg" alt="Μελέτη I: Σκιές και κλιμακοστάσιο" class="diptych-img" width="900" height="600" loading="lazy" decoding="async">
+            </div>
+            <span class="mono-caption">Μελέτη I — Αρχιτεκτονική</span>
+            <h3 style="color: var(--text-light); margin-top: 8px;">Η γεωμετρία της ηρεμίας</h3>
+            <p style="color: var(--text-light-muted); font-size: 0.95rem;">
+              Η αλληλεπίδραση φυσικού φωτός και καθαρών όγκων δημιουργεί ένα σκηνικό όπου ο χρόνος μοιάζει να επιβραδύνει.
+            </p>
+          </div>
+
+          <div class="diptych-card">
+            <div class="diptych-img-wrap">
+              <img src="images/featured-2.svg" alt="Μελέτη II: Χρυσή ώρα και σκυρόδεμα" class="diptych-img" width="900" height="600" loading="lazy" decoding="async">
+            </div>
+            <span class="mono-caption">Μελέτη II — Χρυσή Ώρα</span>
+            <h3 style="color: var(--text-light); margin-top: 8px;">Ανακλάσεις του απογεύματος</h3>
+            <p style="color: var(--text-light-muted); font-size: 0.95rem;">
+              Ζεστές αποχρώσεις που συναντούν την αυστηρότητα των αδρών υλικών, μετατρέποντας τη στιγμή σε οπτική αφήγηση.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-left">
+            <span class="mono-caption">Η Φιλοσοφία</span>
+            <h2 class="about-statement">Παρατηρώ το φως. Ακολουθώ τη στιγμή.</h2>
+          </div>
+          <div class="about-right">
+            <p class="about-body">
+              Το <strong>FOS PHOTOGRAPHY</strong> είναι ένα portfolio concept για την παρουσίαση φωτογραφικών συλλογών. Οι ενδεικτικές εικόνες εξυπηρετούν τη σύνθεση και δεν παρουσιάζονται ως έργα πραγματικού φωτογράφου ή ως προσωπικές λήψεις του VGES Online.
+            </p>
+            <p class="about-body">
+              Η προσέγγιση βασίζεται στην ανάδειξη του αρνητικού χώρου, στη φυσικότητα της έκφρασης και στον σεβασμό των υφών. Κάθε κάδρο δομείται με στόχο την αφαίρεση του περιττού, αφήνοντας την ουσία να επικοινωνήσει με τον θεατή.
+            </p>
+            <a href="#services" class="btn btn-secondary" style="margin-top: 16px;">Θεματικές Ενότητες</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="mono-caption">Θεματικές Ενότητες</span>
+          <h2>Φωτογραφικές Υπηρεσίες</h2>
+          <p>
+            Ενδεικτική κατηγοριοποίηση υπηρεσιών και δημιουργικής κατεύθυνσης για ένα ολοκληρωμένο studio portfolio.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-num">01 / PORTRAITS</div>
+            <h3>Πορτρέτα</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">
+              Ενδεικτική παρουσίαση προσώπων με έμφαση στο φυσικό φως, στην αυθεντική έκφραση και στον διάλογο φωτός και σκιάς.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-num">02 / EDITORIAL</div>
+            <h3>Editorial εικόνες</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">
+              Οπτικές αφηγήσεις που συνδέουν πρόσωπα, χώρους και λεπτομέρειες σε ενιαία αισθητικά projects με ταυτότητα.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-num">03 / BRANDING</div>
+            <h3>Brand stories</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">
+              Σχεδιαστικό παράδειγμα συλλογής εικόνων για την παρουσίαση μιας σύγχρονης επαγγελματικής ταυτότητας και artisanal προϊόντων.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & FAQ Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-layout">
+          <!-- Left: Info & FAQ -->
+          <div class="contact-info">
+            <span class="mono-caption">Δοκιμή Επικοινωνίας</span>
+            <h2>Δες πώς θα λειτουργούσε η επικοινωνία</h2>
+            <p style="color: var(--text-muted); margin-bottom: 24px;">
+              Η παρακάτω φόρμα είναι μια τοπική δοκιμή της εμπειρίας χρήσης. Μην εισάγεις πραγματικά προσωπικά ή ευαίσθητα δεδομένα.
+            </p>
+
+            <div class="faq-box">
+              <h3 style="font-size: 1.25rem; margin-bottom: 20px;">Συχνές Ερωτήσεις (FAQ)</h3>
+              <div class="faq-item">
+                <h4 class="faq-q">Είναι οι εικόνες πραγματικές αναθέσεις;</h4>
+                <p class="faq-a">Όχι. Οι συλλογές είναι ενδεικτικές και η προέλευση κάθε εικόνας καταγράφεται στα credits.</p>
+              </div>
+              <div class="faq-item">
+                <h4 class="faq-q">Μπορώ να ζητήσω φωτογράφιση;</h4>
+                <p class="faq-a">Η παρούσα φόρμα είναι μόνο τοπική δοκιμή σχεδιασμού και δεν στέλνει μήνυμα.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Demo Form -->
+          <div class="form-card">
+            <div class="demo-banner">
+              ⚠️ Demo φόρμα — δεν αποστέλλει στοιχεία
+            </div>
+
+            <form id="demoContactForm" novalidate>
+              <div class="form-group">
+                <label for="sampleName">Ονοματεπώνυμο δείγματος *</label>
+                <input type="text" id="sampleName" class="form-control" placeholder="π.χ. Αλέξανδρος Νικολάου" required>
+              </div>
+
+              <div class="form-group">
+                <label for="sampleEmail">Email δείγματος *</label>
+                <input type="email" id="sampleEmail" class="form-control" placeholder="sample@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="sampleCategory">Κατηγορία ενδιαφέροντος *</label>
+                <select id="sampleCategory" class="form-control" required>
+                  <option value="" disabled selected>Επιλέξτε κατηγορία...</option>
+                  <option value="portraits">Πορτρέτα &amp; Προσωπική φωτογράφιση</option>
+                  <option value="editorial">Editorial &amp; Καλλιτεχνικό Project</option>
+                  <option value="brand">Brand Story &amp; Commercial Identity</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="sampleNotes">Σημειώσεις concept (προαιρετικό)</label>
+                <textarea id="sampleNotes" class="form-control" rows="3" placeholder="Ενδεικτικές σημειώσεις για το ύφος της φωτογράφισης..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">Δοκιμή φόρμας</button>
+
+              <div id="formFeedback" class="form-feedback" role="alert">
+                ✅ Η δοκιμή ολοκληρώθηκε τοπικά. Δεν στάλθηκε μήνυμα και δεν έγινε κράτηση.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#top" class="brand-wrapper" aria-label="Επιστροφή στην κορυφή" style="color: var(--text-light);">
+          <span class="brand-title" style="color: var(--text-light); font-size: 1.5rem;">FOS PHOTOGRAPHY</span>
+        </a>
+
+        <div class="footer-links">
+          <a href="#work">Συλλογές</a>
+          <a href="#featured">Ιστορίες</a>
+          <a href="#about">Προσέγγιση</a>
+          <a href="#services">Φωτογραφίσεις</a>
+          <a href="#contact">Επικοινωνία</a>
+        </div>
+      </div>
+
+      <p class="footer-disclaimer">
+        Η παρούσα σελίδα είναι σχεδιαστικό demo. Δεν λειτουργεί πραγματική επιχείρηση μέσω αυτού του website και δεν πραγματοποιούνται κρατήσεις ή αποστολές μηνυμάτων.
+      </p>
+
+      <div class="footer-copy">
+        &copy; 2026 FOS PHOTOGRAPHY — Σχεδιαστικό Demo για το VGES Online Websites portfolio.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Accessible Lightbox Modal -->
+  <div id="lightboxModal" class="lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Προβολή εικόνας πλήρους μεγέθους">
+    <button class="lightbox-close" aria-label="Κλείσιμο προβολής (Esc)">&times;</button>
+    <button class="lightbox-prev" aria-label="Προηγούμενη εικόνα (Αριστερό βέλος)">&#8592;</button>
+    <button class="lightbox-next" aria-label="Επόμενη εικόνα (Δεξί βέλος)">&#8594;</button>
+
+    <div class="lightbox-content">
+      <img src="" alt="" class="lightbox-img">
+      <div class="lightbox-caption"></div>
+      <div class="lightbox-desc"></div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>

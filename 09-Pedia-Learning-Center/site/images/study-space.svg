@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+  <defs>
+    <linearGradient id="spaceBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FAFAF6"/>
+      <stop offset="100%" stop-color="#EFF3F9"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="600" fill="url(#spaceBg)"/>
+
+  <!-- Window Frame in Background -->
+  <rect x="120" y="80" width="220" height="260" rx="6" fill="#E8EEF8" stroke="#D5DFEE" stroke-width="4"/>
+  <line x1="230" y1="80" x2="230" y2="340" stroke="#D5DFEE" stroke-width="3"/>
+  <line x1="120" y1="210" x2="340" y2="210" stroke="#D5DFEE" stroke-width="3"/>
+  <!-- Sunlight warm patch -->
+  <polygon points="120,340 340,340 460,460 200,460" fill="#F2C55B" opacity="0.12"/>
+
+  <!-- Wall Bookshelf on Right -->
+  <g transform="translate(480, 80)">
+    <rect x="0" y="0" width="340" height="380" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+    <!-- Shelves -->
+    <line x1="0" y1="95" x2="340" y2="95" stroke="#CBD5E1" stroke-width="3"/>
+    <line x1="0" y1="190" x2="340" y2="190" stroke="#CBD5E1" stroke-width="3"/>
+    <line x1="0" y1="285" x2="340" y2="285" stroke="#CBD5E1" stroke-width="3"/>
+
+    <!-- Books on Shelf 1 -->
+    <rect x="20" y="25" width="18" height="70" fill="#4656A4"/>
+    <rect x="42" y="15" width="22" height="80" fill="#253556"/>
+    <rect x="68" y="30" width="16" height="65" fill="#F2C55B"/>
+    <rect x="88" y="20" width="24" height="75" fill="#DDE9DD" stroke="#4656A4" stroke-width="1"/>
+    <rect x="116" y="28" width="18" height="67" fill="#4656A4"/>
+
+    <!-- Plant on Shelf 1 -->
+    <circle cx="270" cy="55" r="22" fill="#DDE9DD"/>
+    <path d="M260 55C250 40 260 25 270 20C280 25 290 40 280 55" fill="#3B7A57"/>
+    <rect x="256" y="65" width="28" height="30" fill="#CBD5E1" rx="3"/>
+
+    <!-- Books on Shelf 2 -->
+    <rect x="20" y="120" width="20" height="70" fill="#F2C55B"/>
+    <rect x="44" y="110" width="18" height="80" fill="#4656A4"/>
+    <rect x="66" y="130" width="24" height="60" fill="#253556"/>
+    <rect x="220" y="125" width="18" height="65" fill="#4656A4"/>
+    <rect x="242" y="115" width="20" height="75" fill="#8295D9"/>
+    <rect x="266" y="130" width="22" height="60" fill="#F2C55B"/>
+
+    <!-- Books on Shelf 3 -->
+    <rect x="30" y="210" width="22" height="75" fill="#253556"/>
+    <rect x="56" y="200" width="18" height="85" fill="#4656A4"/>
+    <rect x="78" y="225" width="24" height="60" fill="#DDE9DD" stroke="#4656A4" stroke-width="1"/>
+  </g>
+
+  <!-- Modular Study Table -->
+  <g transform="translate(140, 420)">
+    <!-- Table top -->
+    <rect x="0" y="0" width="620" height="28" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+    <!-- Legs -->
+    <rect x="30" y="28" width="16" height="130" fill="#CBD5E1"/>
+    <rect x="574" y="28" width="16" height="130" fill="#CBD5E1"/>
+
+    <!-- Study Chairs -->
+    <g transform="translate(80, 20)">
+      <rect x="0" y="30" width="80" height="12" rx="3" fill="#4656A4"/>
+      <rect x="15" y="-50" width="50" height="70" rx="6" fill="#4656A4"/>
+      <rect x="10" y="42" width="10" height="90" fill="#253556"/>
+      <rect x="60" y="42" width="10" height="90" fill="#253556"/>
+    </g>
+
+    <g transform="translate(440, 20)">
+      <rect x="0" y="30" width="80" height="12" rx="3" fill="#4656A4"/>
+      <rect x="15" y="-50" width="50" height="70" rx="6" fill="#4656A4"/>
+      <rect x="10" y="42" width="10" height="90" fill="#253556"/>
+      <rect x="60" y="42" width="10" height="90" fill="#253556"/>
+    </g>
+
+    <!-- Tableware / Notebooks -->
+    <rect x="220" y="-12" width="80" height="12" rx="2" fill="#F2C55B"/>
+    <rect x="330" y="-10" width="90" height="10" rx="2" fill="#8295D9"/>
+  </g>
+</svg>

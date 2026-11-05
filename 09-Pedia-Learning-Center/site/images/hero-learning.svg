@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="pediaBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2F5FD"/>
+      <stop offset="100%" stop-color="#E5ECFA"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#253556" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#pediaBg)"/>
+
+  <!-- Decorative geometric accents -->
+  <circle cx="120" cy="100" r="40" fill="#F2C55B" opacity="0.4"/>
+  <circle cx="700" cy="140" r="60" fill="#DDE9DD" opacity="0.6"/>
+  <rect x="680" y="440" width="80" height="80" rx="20" fill="#F2C55B" opacity="0.25"/>
+
+  <!-- Main Study Scene Desk Group -->
+  <g filter="url(#softShadow)">
+    <!-- Desk surface -->
+    <rect x="100" y="480" width="600" height="24" rx="6" fill="#D5DFEE"/>
+
+    <!-- Desk Lamp -->
+    <path d="M220 480L220 280L280 230" stroke="#253556" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <circle cx="220" cy="480" r="16" fill="#4656A4"/>
+    <path d="M260 215L310 245L270 280Z" fill="#F2C55B"/>
+    <!-- Light cone -->
+    <polygon points="310,245 460,480 340,480" fill="#F2C55B" opacity="0.15"/>
+
+    <!-- Stack of Colorful Books -->
+    <rect x="360" y="450" width="160" height="30" rx="4" fill="#4656A4"/>
+    <rect x="370" y="420" width="140" height="30" rx="4" fill="#253556"/>
+    <rect x="380" y="390" width="130" height="30" rx="4" fill="#F2C55B"/>
+    <rect x="390" y="360" width="110" height="30" rx="4" fill="#8295D9"/>
+
+    <!-- Spine lines -->
+    <line x1="380" y1="455" x2="380" y2="475" stroke="#FFFFFF" stroke-width="2"/>
+    <line x1="390" y1="425" x2="390" y2="445" stroke="#FFFFFF" stroke-width="2"/>
+
+    <!-- Open Book In Front -->
+    <g transform="translate(480, 420)">
+      <path d="M0 40C30 30 60 30 90 35C120 30 150 30 180 40L170 55C140 45 110 45 90 50C70 45 40 45 10 55Z" fill="#CBD5E1"/>
+      <path d="M10 20C40 10 70 10 90 18C110 10 140 10 170 20V50C140 40 110 40 90 48C70 40 40 40 10 50Z" fill="#FFFFFF"/>
+      <line x1="90" y1="18" x2="90" y2="48" stroke="#4656A4" stroke-width="2"/>
+      <!-- lines on book -->
+      <line x1="25" y1="26" x2="75" y2="26" stroke="#94A3B8" stroke-width="2"/>
+      <line x1="25" y1="32" x2="70" y2="32" stroke="#94A3B8" stroke-width="2"/>
+      <line x1="25" y1="38" x2="65" y2="38" stroke="#94A3B8" stroke-width="2"/>
+      <line x1="105" y1="26" x2="155" y2="26" stroke="#94A3B8" stroke-width="2"/>
+      <line x1="105" y1="32" x2="150" y2="32" stroke="#94A3B8" stroke-width="2"/>
+      <line x1="105" y1="38" x2="140" y2="38" stroke="#94A3B8" stroke-width="2"/>
+    </g>
+
+    <!-- Globe / Compass -->
+    <g transform="translate(180, 360)">
+      <circle cx="0" cy="0" r="32" fill="#DDE9DD" stroke="#4656A4" stroke-width="3"/>
+      <path d="M-30 0C-10 15 10 15 30 0" stroke="#4656A4" stroke-width="2" fill="none"/>
+      <path d="M-22 -20C0 -10 0 10 -22 20" stroke="#4656A4" stroke-width="2" fill="none"/>
+      <path d="M22 -20C0 -10 0 10 22 20" stroke="#4656A4" stroke-width="2" fill="none"/>
+      <!-- Base -->
+      <path d="M0 32V60" stroke="#253556" stroke-width="5"/>
+      <rect x="-24" y="60" width="48" height="10" rx="3" fill="#253556"/>
+    </g>
+
+    <!-- Pencil Holder with Tools -->
+    <g transform="translate(290, 410)">
+      <rect x="0" y="20" width="36" height="50" rx="4" fill="#FFFFFF" stroke="#4656A4" stroke-width="2"/>
+      <!-- Pens & Ruler -->
+      <line x1="10" y1="0" x2="10" y2="20" stroke="#F2C55B" stroke-width="5" stroke-linecap="round"/>
+      <line x1="20" y1="-8" x2="20" y2="20" stroke="#253556" stroke-width="4" stroke-linecap="round"/>
+      <line x1="28" y1="4" x2="28" y2="20" stroke="#4656A4" stroke-width="5" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Learning Card Badge Floating -->
+  <g transform="translate(520, 160)" filter="url(#softShadow)">
+    <rect width="180" height="74" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+    <circle cx="36" cy="37" r="16" fill="#F2C55B"/>
+    <text x="31" y="43" font-family="'Trebuchet MS', sans-serif" font-size="18" font-weight="bold" fill="#253556">&#9733;</text>
+    <text x="64" y="32" font-family="'Trebuchet MS', sans-serif" font-size="12" font-weight="bold" fill="#253556">Μαθησιακή Ροή</text>
+    <text x="64" y="50" font-family="'Trebuchet MS', sans-serif" font-size="11" fill="#4656A4">Οργάνωση &amp; Πρόοδος</text>
+  </g>
+</svg>

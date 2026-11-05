@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="pediaOgBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAFAF6"/>
+      <stop offset="100%" stop-color="#EFF3F9"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#pediaOgBg)"/>
+
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="18" height="630" fill="#4656A4"/>
+
+  <!-- Brand badge -->
+  <rect x="100" y="70" width="220" height="38" rx="6" fill="#F2C55B"/>
+  <text x="116" y="95" font-family="'Trebuchet MS', sans-serif" font-size="14" font-weight="bold" fill="#253556" letter-spacing="1.5">ΣΧΕΔΙΑΣΤΙΚΟ DEMO</text>
+
+  <!-- Title -->
+  <text x="100" y="180" font-family="'Arial Black', Arial, sans-serif" font-size="52" fill="#253556">PEDIA LEARNING CENTER</text>
+  <text x="100" y="235" font-family="'Trebuchet MS', sans-serif" font-size="28" font-weight="bold" fill="#4656A4">Κάθε βήμα στη μάθηση έχει σημασία.</text>
+
+  <!-- Description -->
+  <text x="100" y="305" font-family="'Trebuchet MS', sans-serif" font-size="20" fill="#4B5563">Προγράμματα, τρόπος προσέγγισης και επικοινωνία σε ένα φιλικό concept</text>
+  <text x="100" y="340" font-family="'Trebuchet MS', sans-serif" font-size="20" fill="#4B5563">εκπαιδευτικού κέντρου για μαθητές και γονείς.</text>
+
+  <!-- Feature cards row -->
+  <g transform="translate(100, 410)">
+    <rect x="0" y="0" width="230" height="100" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+    <circle cx="35" cy="35" r="14" fill="#F2C55B"/>
+    <text x="60" y="40" font-family="'Trebuchet MS', sans-serif" font-size="16" font-weight="bold" fill="#253556">Καθημερινή Μελέτη</text>
+    <text x="20" y="75" font-family="'Trebuchet MS', sans-serif" font-size="13" fill="#64748B">Οργάνωση &amp; ρουτίνα</text>
+
+    <rect x="250" y="0" width="230" height="100" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+    <circle cx="285" cy="35" r="14" fill="#4656A4"/>
+    <text x="310" y="40" font-family="'Trebuchet MS', sans-serif" font-size="16" font-weight="bold" fill="#253556">Ενίσχυση Μαθημάτων</text>
+    <text x="270" y="75" font-family="'Trebuchet MS', sans-serif" font-size="13" fill="#64748B">Στοχευμένη βοήθεια</text>
+
+    <rect x="500" y="0" width="230" height="100" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+    <circle cx="535" cy="35" r="14" fill="#DDE9DD"/>
+    <text x="560" y="40" font-family="'Trebuchet MS', sans-serif" font-size="16" font-weight="bold" fill="#253556">Γλωσσική Ανάπτυξη</text>
+    <text x="520" y="75" font-family="'Trebuchet MS', sans-serif" font-size="13" fill="#64748B">Μάθηση &amp; έκφραση</text>
+
+    <rect x="750" y="0" width="230" height="100" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+    <circle cx="785" cy="35" r="14" fill="#F2C55B"/>
+    <text x="810" y="40" font-family="'Trebuchet MS', sans-serif" font-size="16" font-weight="bold" fill="#253556">Δεξιότητες Μάθησης</text>
+    <text x="770" y="75" font-family="'Trebuchet MS', sans-serif" font-size="13" fill="#64748B">Μέθοδοι &amp; πρόοδος</text>
+  </g>
+
+  <!-- Footer Watermark -->
+  <text x="100" y="580" font-family="'Trebuchet MS', sans-serif" font-size="14" font-weight="bold" fill="#94A3B8">VGES ONLINE WEBSITES &bull; DEMO PORTFOLIO</text>
+</svg>

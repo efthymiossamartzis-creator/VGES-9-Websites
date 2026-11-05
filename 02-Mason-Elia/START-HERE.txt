@@ -1,0 +1,12 @@
+MASON ELIA — START HERE (VGES Online Websites)
+
+1. Extract this ZIP to a new folder on your PC.
+2. Open the folder 02-Mason-Elia in Google Antigravity.
+3. Open ANTIGRAVITY-PROMPT.md, copy ALL its contents and send it to Antigravity.
+4. State that the extracted Gusto template is ALREADY in site/; it must adapt those files, not create a new project.
+5. Inspect locally before GitHub or Cloudflare.
+
+WARNING: Original template contains demonstration restaurant info and forms that do NOT send bookings.
+Follow the Antigravity prompt's instructions to replace all fake company details and remove fake success confirmations.
+The supplied images and embedded 3rd-party licenses must be checked before public use.
+DO NOT delete site/ or overwrite project files using the original ZIP.

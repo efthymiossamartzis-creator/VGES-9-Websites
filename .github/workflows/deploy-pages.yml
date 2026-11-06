@@ -61,20 +61,48 @@ jobs:
           RAW_CF_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           RAW_CF_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: |
-          CLEAN_TOKEN=$(printf "%s" "$RAW_CF_API_TOKEN" | tr -d '\r\n\t ')
-          CLOUDFLARE_ACCOUNT_ID=$(printf "%s" "$RAW_CF_ACCOUNT_ID" | tr -d '\r\n\t ')
+          echo "=== TOKEN ANATOMY CHECK ==="
+          echo "Raw token length: ${#RAW_CF_API_TOKEN}"
+          WORD_COUNT=$(printf "%s" "$RAW_CF_API_TOKEN" | wc -w)
+          echo "Word count: $WORD_COUNT"
 
-          # Extract 40-char token candidate if the secret is wrapped in curl/bearer text
-          TOKEN_CANDIDATE=$(printf "%s" "$CLEAN_TOKEN" | grep -oE '[a-zA-Z0-9_-]{40}' | head -n 1)
-          if [ -n "$TOKEN_CANDIDATE" ]; then
-            CLOUDFLARE_API_TOKEN="$TOKEN_CANDIDATE"
-            echo "🔍 Extracted 40-char token candidate from secret (length: ${#CLOUDFLARE_API_TOKEN})."
+          CLOUDFLARE_ACCOUNT_ID=$(printf "%s" "$RAW_CF_ACCOUNT_ID" | tr -d '\r\n\t ')
+          export CLOUDFLARE_ACCOUNT_ID
+
+          FOUND_VALID_TOKEN=false
+          VALID_TOKEN=""
+
+          # Iterate through candidates
+          for raw_w in $RAW_CF_API_TOKEN; do
+            clean_w=$(printf "%s" "$raw_w" | tr -d '"'\''\\:;, \t\r\n')
+            w_len=${#clean_w}
+            if [ "$w_len" -ge 30 ] && [ "$w_len" -le 60 ]; then
+              echo "Testing candidate of length $w_len against /user/tokens/verify..."
+              STATUS=$(curl -s -o /tmp/cf_verify.json -w "%{http_code}" -X GET "https://api.cloudflare.com/client/v4/user/tokens/verify" \
+                -H "Authorization: Bearer $clean_w")
+              if [ "$STATUS" = "200" ]; then
+                echo "🎉 SUCCESS: Found valid active Cloudflare API Token (length $w_len, HTTP 200)!"
+                VALID_TOKEN="$clean_w"
+                FOUND_VALID_TOKEN=true
+                break
+              else
+                ERR=$(jq -c '{errors: .errors}' /tmp/cf_verify.json 2>/dev/null || cat /tmp/cf_verify.json)
+                echo "Candidate length $w_len failed with HTTP $STATUS: $ERR"
+              fi
+            else
+              echo "Skipping word of length $w_len (not in token range 30-60)"
+            fi
+          done
+
+          if [ "$FOUND_VALID_TOKEN" = true ]; then
+            CLOUDFLARE_API_TOKEN="$VALID_TOKEN"
+            echo "✅ Verified valid Cloudflare API token selected."
           else
-            CLOUDFLARE_API_TOKEN="$CLEAN_TOKEN"
+            CLOUDFLARE_API_TOKEN=$(printf "%s" "$RAW_CF_API_TOKEN" | tr -d '\r\n\t ')
+            echo "⚠️ No verified token candidate found among words. Using sanitized raw token."
           fi
 
           export CLOUDFLARE_API_TOKEN
-          export CLOUDFLARE_ACCOUNT_ID
 
           if [ -z "$CLOUDFLARE_API_TOKEN" ]; then
             echo "❌ ERROR: GitHub Secret 'CLOUDFLARE_API_TOKEN' is missing."
@@ -88,19 +116,6 @@ jobs:
           fi
           echo "✅ Cloudflare secrets verified (Token length: ${#CLOUDFLARE_API_TOKEN}, Account ID length: ${#CLOUDFLARE_ACCOUNT_ID})."
 
-          echo "🔍 Verifying token with Cloudflare API (/user/tokens/verify)..."
-          VERIFY_OUTPUT=$(curl -s -w "\n%{http_code}" -X GET "https://api.cloudflare.com/client/v4/user/tokens/verify" \
-            -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN")
-          HTTP_STATUS=$(echo "$VERIFY_OUTPUT" | tail -n 1)
-          BODY=$(echo "$VERIFY_OUTPUT" | head -n -1)
-
-          if [ "$HTTP_STATUS" = "200" ]; then
-            echo "✅ Cloudflare token successfully verified (HTTP 200, Active)."
-          else
-            echo "⚠️ Cloudflare token verification returned HTTP $HTTP_STATUS:"
-            echo "$BODY" | jq -c '{success: .success, errors: .errors}' 2>/dev/null || echo "Response: $BODY"
-          fi
-
       - name: Detect Changes and Deploy
         env:
           RAW_CF_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -108,14 +123,26 @@ jobs:
           TARGET: ${{ inputs.target_project }}
           INPUT_DEPLOY_ALL: ${{ inputs.deploy_all }}
         run: |
-          CLEAN_TOKEN=$(printf "%s" "$RAW_CF_API_TOKEN" | tr -d '\r\n\t ')
           CLOUDFLARE_ACCOUNT_ID=$(printf "%s" "$RAW_CF_ACCOUNT_ID" | tr -d '\r\n\t ')
 
-          TOKEN_CANDIDATE=$(printf "%s" "$CLEAN_TOKEN" | grep -oE '[a-zA-Z0-9_-]{40}' | head -n 1)
-          if [ -n "$TOKEN_CANDIDATE" ]; then
-            CLOUDFLARE_API_TOKEN="$TOKEN_CANDIDATE"
+          VALID_TOKEN=""
+          for raw_w in $RAW_CF_API_TOKEN; do
+            clean_w=$(printf "%s" "$raw_w" | tr -d '"'\''\\:;, \t\r\n')
+            w_len=${#clean_w}
+            if [ "$w_len" -ge 30 ] && [ "$w_len" -le 60 ]; then
+              STATUS=$(curl -s -o /tmp/cf_verify.json -w "%{http_code}" -X GET "https://api.cloudflare.com/client/v4/user/tokens/verify" \
+                -H "Authorization: Bearer $clean_w")
+              if [ "$STATUS" = "200" ]; then
+                VALID_TOKEN="$clean_w"
+                break
+              fi
+            fi
+          done
+
+          if [ -n "$VALID_TOKEN" ]; then
+            CLOUDFLARE_API_TOKEN="$VALID_TOKEN"
           else
-            CLOUDFLARE_API_TOKEN="$CLEAN_TOKEN"
+            CLOUDFLARE_API_TOKEN=$(printf "%s" "$RAW_CF_API_TOKEN" | tr -d '\r\n\t ')
           fi
 
           export CLOUDFLARE_API_TOKEN
